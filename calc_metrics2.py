@@ -199,6 +199,7 @@ def calc_froc(pred_data, fps_req = [0.025,0.05,0.1,0.15,0.2,0.3,0.4,0.5, 0.55 ,0
                 fpi_calc.append(fp_req)
                 print(fp_req, sensitivity[i-1], thresholds[i])
                 break
+    # save_plot(senses_req, fps_req, data="aiims")
     # print(fps_req)
     # print(senses_req)
     return froc_fpis, froc_sens, froc_thres

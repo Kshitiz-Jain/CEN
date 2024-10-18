@@ -205,7 +205,7 @@ if __name__ == '__main__':
         transforms.ToTensor(),
         transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
     ])
-    DATA_PATH = ""
+    DATA_PATH = "/home/kshitiz/scratch/MAMMO/DATA7/AIIMS/PAIR_DATASETS/PAIR_DATA_NMS/"
     # dataset = PAIRDataset(pairs_path=DATA_PATH, transform=transform)
     dataset = ClfDataset(pairs_path=DATA_PATH, transform=transform)
     dataloader = DataLoader(dataset, batch_size=1, shuffle=True)
